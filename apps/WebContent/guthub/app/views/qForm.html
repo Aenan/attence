@@ -1,0 +1,159 @@
+
+<div class="container">
+	<div class="row">
+
+		<div class="col-md-offset-2 col-md-9">
+
+			<div class="panel panel-primary">
+
+				<div class="panel-heading text-uppercase bg-danger">
+					<strong>&nbsp;&nbsp;&nbsp;&nbsp;请假申请</strong>
+				</div>
+
+				<div class="panel-body">
+					<form class="form-horizontal" role="form">
+
+						<div class="form-group">
+							<label class="control-label col-md-offset-5"><h6>请假单</h6>
+							</label><br/>
+							<div class="row" >
+								<label for="username" class="col-md-2 control-label">姓名</label>
+								<div class="col-md-3">
+									<input type="text" class="form-control" id="username"
+										placeholder="请输入姓名">
+								</div>
+								<label for="department" class="col-md-2 control-label">部门</label>
+								<div class="col-md-3">
+									<select class="form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+
+								</div>
+							</div>
+							<br/>
+							<div class="row"><label for="department" class="col-md-2 control-label">类型</label>
+								<div class="col-md-3">
+									<select class="form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+
+								</div></div>
+						</div>
+						<div class="form-group" >
+							<div class="row">
+								<label for="username" class="col-md-2 control-label">开始时间</label>
+								<div class="col-md-3">
+									timepicker
+								</div>
+								<label for="department" class="col-md-2 control-label">结束时间</label>
+								<div class="col-md-3">
+									timepicker
+
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<label for="reason" class="col-md-2 control-label">事由</label>
+
+								<div class="col-md-8">
+									<textarea class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+							<div class="row"></div>
+						</div>
+						<div class="row">
+							<button type="button"
+								class="btn btn-inverse button-glow col-md-offset-4 col-md-1">提交</button>
+							<button type="button"
+								class="btn btn-inverse button-glow col-md-offset-1 col-md-1">清空</button>
+
+						</div>
+
+						<hr>
+
+						<div class="form-group">
+							<div class="row">
+								<label for="reason"
+									class="col-md-offset-3 col-md-4 control-label"><h6>部门经理审批意见</h6>
+
+								</label> <label class="col-md-offset-2 control-label"><br />状态</label>
+
+							</div>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+									<textarea class="form-control" rows="3" disabled></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<label class="col-md-offset-7 control-label">签名</label> <label
+									class="col-md-offset-2 control-label">时间</label>
+							</div>
+						</div>
+						<hr>
+
+						<div class="form-group">
+							<div class="row">
+								<label for="reason"
+									class="col-md-offset-3 col-md-4 control-label"><h6>副总经理审批意见</h6>
+								</label> </label> <label class="col-md-offset-2 control-label"><br />状态</label>
+							</div>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+									<textarea class="form-control" rows="3" disabled></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<label class="col-md-offset-7 control-label">签名</label> <label
+									class="col-md-offset-2 control-label">时间</label>
+							</div>
+						</div>
+						<hr>
+
+						<div class="form-group">
+							<div class="row">
+								<label for="reason"
+									class="col-md-offset-3 col-md-4 control-label"><h6>总经理审批意见</h6>
+								</label> </label> <label class="col-md-offset-2 control-label"><br />状态</label>
+							</div>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+									<textarea class="form-control" rows="3" disabled></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<label class="col-md-offset-7 control-label">签名</label> <label
+									class="col-md-offset-2 control-label">时间</label>
+							</div>
+						</div>
+
+
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$('.form_datetime').datetimepicker({
+		//language:  'fr',
+		weekStart : 1,
+		todayBtn : 1,
+		autoclose : 1,
+		todayHighlight : 1,
+		startView : 2,
+		forceParse : 0,
+		showMeridian : 1
+	});
+
+</script>
